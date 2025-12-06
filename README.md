@@ -13,13 +13,14 @@ Exposes 5 tools via Model Context Protocol:
 - `get_customer_history(customer_id)` - Get customer's ticket history
 
 ### 2. Customer Data Agent (`agents/customer_data_agent.py`)
-- Connects to MCP server via MCPToolSet
-- Handles all customer data operations
+- MCP Tools: `get_customer`, `list_customers`, `update_customer`
+- Handles customer data operations
 - Exposes A2A interface on port 10020
 
 ### 3. Support Agent (`agents/support_agent.py`)
-- Provides customer support responses
-- Analyzes issue severity and priority
+- MCP Tools: `create_ticket`, `get_customer_history`
+- Handles ticket creation and history retrieval
+- Provides support guidance and priority analysis
 - Exposes A2A interface on port 10021
 
 ### 4. Router Agent (`agents/router_agent.py`)
@@ -27,6 +28,7 @@ Exposes 5 tools via Model Context Protocol:
 - Routes queries to appropriate specialists
 - Coordinates multi-step operations
 - Exposes A2A interface on port 10022
+
 
 ## Installation
 

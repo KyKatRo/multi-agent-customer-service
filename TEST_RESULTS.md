@@ -25,87 +25,64 @@ Query: Get customer information for ID 5
 --------------------------------------------------------------------------------
 Response:
 Here is the information for customer ID 5:
-
 Name: Charlie Brown
 Email: charlie.brown@email.com
 Phone: +1-555-0105
 Status: active
+Created At: 2025-12-02 08:11:29
+Updated At: 2025-12-02 08:11:29
 
 
 ### SCENARIO 2: Coordinated Query ###
 Query: Customer 1 needs help upgrading account
 --------------------------------------------------------------------------------
 Response:
-Thank you for providing the customer information and for creating Ticket #33.
+Thank you for reaching out! I've successfully created a support ticket for your account upgrade request. Your ticket number is #35.
 
-Hello John Doe, I understand you're looking to upgrade your account. I've noted this as a **MEDIUM** priority request, and we'll get this sorted for you.
+To upgrade your account, please visit the "Account Settings" or "Subscription" section on our website. There, you should find options to view available plans and upgrade your current subscription. If you encounter any issues or have further questions during the upgrade process, please reply to this ticket, and our team will be happy to assist you.
 
-To help you with your account upgrade, please follow these steps:
-
-1.  **Log In to Your Account:** Go to our website and log in using your current credentials.
-2.  **Navigate to Account Settings/Billing:** Once logged in, look for a section typically labeled "Account Settings," "Subscription," "Billing," or "Upgrade Plan." This is usually found in the top-right corner of the page, often under your profile icon or name.
-3.  **Select Your Desired Plan:** You'll see a list of available upgrade plans. Review the features and pricing for each, and select the plan that best fits your needs.
-4.  **Confirm Upgrade:** Follow the prompts to confirm your new plan and update any necessary payment information. Your upgrade should be processed immediately.
-
-If you encounter any issues during this process, or if you'd like to discuss the different plan options in more detail, please reply to this message or call us directly at +1-555-0101, referencing Ticket #33. We're here to help!
 
 
 ### SCENARIO 3: Complex Query ###
 Query: Show all active customers who have open tickets
 --------------------------------------------------------------------------------
 Response:
-I understand you're looking for a list of active customers with open tickets. Based on the information provided by `[customer_operations]`, here are the active customers with open tickets and their respective issue details:
+Here are the active customers from the sample who have open tickets:
 
-*   **Alice Williams (ID: 4)**
-    *   Open Ticket ID: 24
-    *   Issue: "Feature request: integration with Slack"
-    *   Priority: MEDIUM (Feature request)
+*   **Alice Williams (ID: 4)**:
+    *   Ticket ID 2: "Database connection timeout errors" (in progress, high priority)
+    *   Ticket ID 24: "Feature request: integration with Slack" (open, low priority)
 
-*   **Charlie Brown (ID: 5)**
-    *   Open Ticket ID: 8
-    *   Issue: "Email notifications not being received"
-    *   Priority: MEDIUM (Functionality problem)
+*   **Charlie Brown (ID: 5)**:
+    *   Ticket ID 8: "Email notifications not being received" (open, medium priority)
 
-*   **Diana Prince (ID: 6)**
-    *   Open Ticket ID: 18
-    *   Issue: "Request for additional language support"
-    *   Priority: MEDIUM (Feature request)
+*   **Diana Prince (ID: 6)**:
+    *   Ticket ID 9: "Dashboard loading very slowly" (in progress, medium priority)
+    *   Ticket ID 18: "Request for additional language support" (open, low priority)
 
-Let me know if you need any further details on these tickets or assistance with them!
+Please let me know if you need any further details or assistance with these tickets!
 
 
 ### SCENARIO 4: Escalation Query ###
 Query: I've been charged twice, please refund immediately!
 --------------------------------------------------------------------------------
 Response:
-I understand your frustration with being charged twice, and I apologize for this inconvenience. We'll get this sorted out for you.
-
-This is a **HIGH** priority issue.
-
-To help me investigate and process your refund immediately, please provide the following details:
-
-1.  The last 4 digits of the credit card used for the transaction.
-2.  The approximate date and time of both charges.
-3.  The amount of each charge.
-4.  The service or product these charges are related to.
-
-Once I have this information, I can look into your account and initiate the refund process.
+This is a HIGH priority billing issue. I understand this is urgent. To create a ticket for you and initiate the refund process, I need your customer ID. Could you please provide it?
 
 
 ### SCENARIO 5: Multi-Intent Query ###
 Query: Update my email and show my ticket history
 --------------------------------------------------------------------------------
 Response:
-Thank you for reaching out!
+I've retrieved your complete ticket history, customer ID 2!
 
-I see that your email address has been successfully updated to **newemail@example.com**.
+Here's a summary of your tickets:
+*   **Ticket ID 7:** "Profile image upload fails" - Resolved (medium priority)
+*   **Ticket ID 14:** "Billing question about invoice" - Resolved (low priority)
+*   **Ticket ID 15:** "Feature request: dark mode" - Open (low priority)
 
-Here is your complete ticket history:
-*   **Ticket ID 7:** "Profile image upload fails" (Status: resolved)
-*   **Ticket ID 14:** "Billing question about invoice" (Status: resolved)
-*   **Ticket ID 15:** "Feature request: dark mode" (Status: open)
+Is there anything else I can help you with regarding these tickets or any other support needs?
 
-If you have any questions about these tickets or need further assistance, please let me know!
 
 
 Demo complete. Press Ctrl+C to exit.

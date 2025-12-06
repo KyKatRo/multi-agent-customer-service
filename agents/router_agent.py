@@ -5,19 +5,20 @@ from a2a.utils.constants import AGENT_CARD_WELL_KNOWN_PATH
 
 # Create RemoteA2aAgent references to the specialist agents
 remote_customer_data_agent = RemoteA2aAgent(
-    name="customer_operations",
-    description="Manages customer data and tickets through MCP tools",
+    name="customer_data_agent",
+    description="Handles customer data operations: get customer, list customers, update customer",
     agent_card=f"http://localhost:10020{AGENT_CARD_WELL_KNOWN_PATH}",
 )
 
 remote_support_agent = RemoteA2aAgent(
-    name="customer_support",
-    description="Provides support responses and solutions",
+    name="support_agent",
+    description="Handles support operations: create tickets, get ticket history, provide support guidance",
     agent_card=f"http://localhost:10021{AGENT_CARD_WELL_KNOWN_PATH}",
 )
 
-# Create the Router Agent as a SequentialAgent
-# SequentialAgent will automatically pass queries through sub-agents in sequence
+# Create the Router Agent with intelligent coordination via SequentialAgent
+# The sub-agents work sequentially, each handling their specialized domain
+# Customer Data Agent handles customer info, Support Agent handles tickets & support
 router_agent = SequentialAgent(
     name="router_agent",
     sub_agents=[remote_customer_data_agent, remote_support_agent],
